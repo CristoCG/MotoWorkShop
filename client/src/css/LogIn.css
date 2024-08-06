@@ -1,0 +1,95 @@
+.login {
+  height: calc(100vh);
+  background-color: rgb(37,36,64);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.errorLogin {
+  padding: 1rem;
+  background-color: rgb(251, 196, 196);
+  text-align: center;
+  font-size: small;
+  color: red;
+  border: 1px dotted red;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.login__form {
+ 
+   margin: auto;
+  padding: 1rem 8rem 3rem 8rem;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__form h1 {
+  text-align: center;
+  font-size: 4rem;
+  text-align: start;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.login__form input.inputLogin {
+  border-radius: 0.5rem;
+  padding: 1.8rem 1.8rem 1.8rem 1rem;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  width: auto;
+}
+
+.login__form input#username::placeholder {
+  background-image: url("../img/username.png") ;
+  background-repeat: no-repeat;
+   background-position: right center;
+}
+
+.login__form input#password::placeholder {
+  background-image: url("../img/password.png") ;
+  background-repeat: no-repeat;
+   background-position: right center;
+}
+
+#codigo::placeholder {
+  background-image: url("../img/password.png") ;
+  background-repeat: no-repeat;
+   background-position: right center;
+}
+
+input.inputLogin:focus{
+  
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+  outline: none; 
+  background-color: rgb(233, 220, 246);
+  border: solid 2px rgb(37,36,64);
+}
+
+.login form .elError {
+  padding: 0.1rem 1rem 1rem 1rem;
+  color: tomato;
+  font-size: small;
+}
+
+.login button.btnLogin {
+  margin-top: 5rem;
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+ 
+}
+
+.login button.btnLogin:hover{
+  background-color: rgb(46, 43, 43);
+  font-style: italic;
+}

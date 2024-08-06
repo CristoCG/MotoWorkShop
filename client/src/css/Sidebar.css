@@ -1,0 +1,92 @@
+.Sidebar {
+  width: 28rem;
+ 
+  background-color: rgb(37, 36, 64);
+  height: calc(100vh);
+  
+}
+
+.Sidebar div,
+.icon {
+  color: rgb(247, 184, 68);
+  padding: 1.5rem 0rem 1.5rem 0rem;
+  display: flex;
+  gap: 1.2rem;
+  text-decoration: none;
+  list-style: none;
+  
+}
+
+.Sidebar ul {
+  width: 100%;
+}
+
+.Sidebar .Sidebar__princ {
+  font-size: 1.8rem;
+  padding-left: 1.5rem;
+  transition: border-left 200ms ease, background-color 200ms ease;
+  cursor: pointer;
+}
+
+
+.Sidebar .Sidebar__princ:hover {
+  border-left: 2px solid #fbf8f8;
+  background-color: rgb(79, 79, 79);
+  transition: border-left 200ms ease, background-color 200ms ease;
+  font-style: italic;
+}
+
+.Sidebar .submenu li {
+  text-align: left;
+  justify-content: left;
+  background-color: rgb(57, 56, 92);
+  width: 100%;
+  font-size: 1.5rem;
+  padding-left: 1.5rem;
+  color: white;
+}
+
+.Sidebar .submenu li:hover {
+  background-color: rgb(79, 79, 79);
+  transition: border-left 200ms ease, background-color 200ms ease;
+  font-style: italic;
+  border-left: 3px solid #fbf8f8;
+}
+
+.active {
+  font-weight: 600;
+  text-decoration: underline;
+  font-style: italic;
+  background-color: rgb(65, 63, 105);
+  
+}
+
+.sidebar-content {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  height: 150vh; /* Altura máxima del contenido con scroll interno */
+  overflow-y: auto; /* Agrega un scroll vertical cuando el contenido excede la altura máxima */
+  overflow-x: hidden;
+}
+
+h2.sidebar-content__titulo {
+  color: white;
+  font-size: 2.2rem;
+  padding-bottom: 2rem;
+  border-bottom: 0px solid white;
+}
+
+.sidebar-content::-webkit-scrollbar {
+  width: 7px; /* Ancho de la barra de scroll */
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+  background-color: white; /* Color de fondo de la barra de scroll */
+  border-radius: 1px; /* Bordes redondeados de la barra de scroll */
+}
+
+.sidebar-content::-webkit-scrollbar-track {
+  background-color: black; /* Color de fondo del track del scroll */
+  border-radius: 3px; /* Bordes redondeados del track del scroll */
+}
